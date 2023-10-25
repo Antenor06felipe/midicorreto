@@ -1,6 +1,16 @@
 function TocaSomPom(idElementoAudio){
-    document.querySelector('#som_tecla-pom').play();
+   const elemento = document.querySelector('#som_tecla-pom').play();
 }
+
+if (elemento === null) {
+    alert('Elemento não encontrado')
+} {
+ if  (elemento != null && elemento.localName === 'audio'){ 
+    //  elemento.play();
+  }else {
+    alert('Elemento não encontrado');
+    }  
+};    
 
 const listadeTeclas = document.querySelectorAll('.tecla');
 
